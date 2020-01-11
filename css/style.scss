@@ -1,0 +1,71 @@
+$blue: #31b7ea;
+
+#content {
+  border: 1px solid black;
+  width: 50%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+
+    .container {
+      width: 100%;
+
+      #title {
+        width: 100%;
+        border: 1px solid black;
+        text-align: center;
+        display: block;
+        background-color: $blue;
+        color: white;
+        font-size: 25px;
+        padding: 10px;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+
+        input {
+          padding: 10px;
+          border-width: 0;
+          border-radius: 3px;
+          background-color: #e7ebee;
+        }
+
+        #name {
+          width: 40%;
+        }
+
+        #lastname {
+          width: 40%;
+        }
+
+        #street {
+          width: 100%;
+        }
+
+        #city {
+          width: 100%;
+        }
+
+        #country {
+          width: 100%;
+        }
+
+        button {
+            background-color: $blue;
+            color: white;
+            border-width: 0;
+            border-radius: 3px;
+            padding: 15px;
+            width: 100%;
+            font-size: 20px;
+        }
+      }
+    }
+  }
+}
