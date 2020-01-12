@@ -1,60 +1,96 @@
-#content {
+@font-face {
+  font-family: "futuraMedium";
+  src: url("../fonts/futuramedium.ttf");
+}
+@font-face {
+  font-family: "futuraCondensed";
+  src: url("../fonts/futuramediumcondensed.ttf");
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body #content {
   border: 1px solid black;
   width: 50%;
+  display: flex;
+  align-items: center;
 }
-#content form {
+body #content form {
   display: flex;
   flex-direction: column;
   width: 35%;
 }
-#content form .container {
+body #content form .container {
   width: 100%;
 }
-#content form .container #title {
-  width: 100%;
-  border: 1px solid black;
+body #content form .container #title {
   text-align: center;
   display: block;
   background-color: #31b7ea;
   color: white;
+  padding: 0;
   font-size: 25px;
-  padding: 10px;
+  font-family: "futuraMedium";
+  margin-bottom: 11px;
 }
-#content form .container div {
+body #content form .container #title div {
+  display: block;
+  padding: 15px;
+}
+body #content form .container div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
 }
-#content form .container div input {
+body #content form .container div input {
   padding: 10px;
   border-width: 0;
   border-radius: 3px;
   background-color: #e7ebee;
+  font-family: "futuraCondensed";
+  font-size: 20px;
 }
-#content form .container div #name {
+body #content form .container div #name {
   width: 40%;
 }
-#content form .container div #lastname {
+body #content form .container div #lastname {
   width: 40%;
 }
-#content form .container div #street {
+body #content form .container div #street {
   width: 100%;
 }
-#content form .container div #city {
+body #content form .container div #city {
   width: 100%;
 }
-#content form .container div #country {
+body #content form .container div #country {
   width: 100%;
 }
-#content form .container div button {
+body #content form .container div button {
   background-color: #31b7ea;
   color: white;
   border-width: 0;
   border-radius: 3px;
-  padding: 15px;
   width: 100%;
   font-size: 20px;
+  font-family: "futuraCondensed";
+  padding: 0;
+  text-align: center;
+}
+body #content form .container div button div {
+  display: block;
+  padding: 10px;
+}
+body #content #mapContainer {
+  width: 65%;
+}
+body #content #mapContainer #map {
+  position: relative;
+  width: 100%;
+  height: 492px;
 }
 
 /*# sourceMappingURL=style.css.map */

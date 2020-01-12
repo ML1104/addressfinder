@@ -1,70 +1,113 @@
 $blue: #31b7ea;
 
-#content {
-  border: 1px solid black;
-  width: 50%;
+@font-face {
+  font-family: "futuraMedium";
+  src: url("../fonts/futuramedium.ttf");
+}
 
-  form {
+@font-face {
+  font-family: "futuraCondensed";
+  src: url("../fonts/futuramediumcondensed.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+  #content {
+    border: 1px solid black;
+    width: 50%;
     display: flex;
-    flex-direction: column;
-    width: 35%;
+    align-items: center;
 
-    .container {
-      width: 100%;
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 35%;
 
-      #title {
+      .container {
         width: 100%;
-        border: 1px solid black;
-        text-align: center;
-        display: block;
-        background-color: $blue;
-        color: white;
-        font-size: 25px;
-        padding: 10px;
-      }
 
-      div {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px;
+        #title {
+          text-align: center;
+          display: block;
+          background-color: $blue;
+          color: white;
+          padding: 0;
+          font-size: 25px;
+          font-family: "futuraMedium";
+          margin-bottom: 11px;
 
-        input {
-          padding: 10px;
-          border-width: 0;
-          border-radius: 3px;
-          background-color: #e7ebee;
+          div {
+            display: block;
+            padding: 15px;
+          }
         }
 
-        #name {
-          width: 40%;
-        }
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px;
 
-        #lastname {
-          width: 40%;
-        }
+          input {
+            padding: 10px;
+            border-width: 0;
+            border-radius: 3px;
+            background-color: #e7ebee;
+            font-family: "futuraCondensed";
+            font-size: 20px;
+          }
 
-        #street {
-          width: 100%;
-        }
+          #name {
+            width: 40%;
+          }
 
-        #city {
-          width: 100%;
-        }
+          #lastname {
+            width: 40%;
+          }
 
-        #country {
-          width: 100%;
-        }
+          #street {
+            width: 100%;
+          }
 
-        button {
+          #city {
+            width: 100%;
+          }
+
+          #country {
+            width: 100%;
+          }
+
+          button {
             background-color: $blue;
             color: white;
             border-width: 0;
             border-radius: 3px;
-            padding: 15px;
             width: 100%;
             font-size: 20px;
+            font-family: "futuraCondensed";
+            padding: 0;
+            text-align: center;
+
+            div {
+              display: block;
+              padding: 10px;
+            }
+          }
         }
+      }
+    }
+
+    #mapContainer {
+      width: 65%;
+
+      #map {
+        position: relative;
+        width: 100%;
+        height: 492px;
       }
     }
   }
