@@ -36,17 +36,17 @@ body #content form .container #title {
   font-family: "futuraMedium";
   margin-bottom: 11px;
 }
-body #content form .container #title div {
+body #content form .container #title #titleText {
   display: block;
   padding: 15px;
 }
-body #content form .container div {
+body #content form .container .inputBlock {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
 }
-body #content form .container div input {
+body #content form .container .inputBlock input {
   padding: 10px;
   border-width: 0;
   border-radius: 3px;
@@ -54,22 +54,22 @@ body #content form .container div input {
   font-family: "futuraCondensed";
   font-size: 20px;
 }
-body #content form .container div #name {
+body #content form .container .inputBlock #name {
   width: 40%;
 }
-body #content form .container div #lastname {
+body #content form .container .inputBlock #lastname {
   width: 40%;
 }
-body #content form .container div #street {
+body #content form .container .inputBlock #street {
   width: 100%;
 }
-body #content form .container div #city {
+body #content form .container .inputBlock #city {
   width: 100%;
 }
-body #content form .container div #country {
+body #content form .container .inputBlock #country {
   width: 100%;
 }
-body #content form .container div button {
+body #content form .container .inputBlock #addUserButton {
   background-color: #31b7ea;
   color: white;
   border-width: 0;
@@ -80,7 +80,7 @@ body #content form .container div button {
   padding: 0;
   text-align: center;
 }
-body #content form .container div button div {
+body #content form .container .inputBlock #addUserButton div {
   display: block;
   padding: 10px;
 }

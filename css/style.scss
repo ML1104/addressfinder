@@ -40,13 +40,13 @@ body {
           font-family: "futuraMedium";
           margin-bottom: 11px;
 
-          div {
+          #titleText {
             display: block;
             padding: 15px;
           }
         }
 
-        div {
+        .inputBlock {
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -81,7 +81,7 @@ body {
             width: 100%;
           }
 
-          button {
+          #addUserButton {
             background-color: $blue;
             color: white;
             border-width: 0;
