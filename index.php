@@ -77,7 +77,7 @@ $conn->close();
     </div>
 
     <script src="js/main.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgp110dBvOenjg4D7WxHZIW3LDQxPSjmo&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=APIKEY&callback=initMap" async defer></script>
 </body>
 
 </html>
