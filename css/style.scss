@@ -21,6 +21,8 @@ body {
     width: 50%;
     display: flex;
     align-items: center;
+    margin-top: 50px;
+    margin-left: 50px;
 
     form {
       display: flex;
@@ -61,6 +63,18 @@ body {
             font-size: 20px;
           }
 
+          // Mark invalid field in red
+
+          .invalid {
+            &:invalid {
+              background-color: #FD757D;
+
+              &::placeholder {
+                color: white;
+              }
+            }
+          }
+
           #name {
             width: 40%;
           }
@@ -91,6 +105,10 @@ body {
             font-family: "futuraCondensed";
             padding: 0;
             text-align: center;
+
+            &:hover {
+              cursor: pointer;
+            }
 
             div {
               display: block;

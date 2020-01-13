@@ -17,6 +17,8 @@ body #content {
   width: 50%;
   display: flex;
   align-items: center;
+  margin-top: 50px;
+  margin-left: 50px;
 }
 body #content form {
   display: flex;
@@ -54,6 +56,12 @@ body #content form .container .inputBlock input {
   font-family: "futuraCondensed";
   font-size: 20px;
 }
+body #content form .container .inputBlock .invalid:invalid {
+  background-color: #FD757D;
+}
+body #content form .container .inputBlock .invalid:invalid::placeholder {
+  color: white;
+}
 body #content form .container .inputBlock #name {
   width: 40%;
 }
@@ -79,6 +87,9 @@ body #content form .container .inputBlock #addUserButton {
   font-family: "futuraCondensed";
   padding: 0;
   text-align: center;
+}
+body #content form .container .inputBlock #addUserButton:hover {
+  cursor: pointer;
 }
 body #content form .container .inputBlock #addUserButton div {
   display: block;
